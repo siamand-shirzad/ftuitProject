@@ -1,0 +1,389 @@
+*{
+    font-family: kadwa;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* text-decoration: none; */
+    transition: all 1s;
+    list-style: none;
+}
+
+@font-face {
+    font-family: kadwa;
+    src: url(/assets/font/Kadwa-Regular.ttf);
+}
+
+                             /* navbaar section */
+.navbar{
+    padding: 2rem;
+    background-color: #0A490A;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-evenly;
+}
+.searchBox{
+    position: relative;
+    display: flex;
+    height: 2rem;
+}
+.searchBox img{    
+    position: absolute;
+    left: 0;
+    height: 2rem;
+}
+.searchBox ::placeholder{
+    color: white;
+    padding-left: 2rem;
+}
+.searchBox input , .searchBox select{
+    height: 100%;
+    color: inherit;
+    background: transparent;
+    border: 1px solid white;
+    padding-inline: 1rem;
+}
+.searchBox select option{
+    color: black;
+}
+.iconBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 4rem;
+    justify-content: space-around;
+    font-size: 0.5rem;
+}
+.hover:hover{
+    color: #FFC107;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.iconBox img{
+    transform: scale(0.6);
+}
+                                /* banner section */
+
+
+
+.banner{
+    background-color: #FFC107;
+    color: #0A490A;
+    padding: 2rem 7rem;
+    position: relative;
+}
+.badge{
+    background-color: #B4C8B1;
+    border-radius: 0.6rem;
+    padding-inline: 1rem;
+    font-size: 0.8rem;
+}
+.banner h1{
+    line-height: 5rem;
+    font-size: 4rem;
+}
+.banner p{
+    margin-top: 2rem;
+    line-height: 2rem;
+    width: 70%;
+    font-size: 1.3rem;
+}
+.button{
+    margin-top: 2rem;    
+    position: relative;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+.button button{
+    font-weight: bolder;
+    border: none;
+    color: inherit;
+    background-color: #B4C8B1;
+    padding-inline: 3rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+.button img{
+    position: absolute;
+    transform: scale(0.7);
+    left: 11rem;
+}
+.discount{
+    display: flex;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 1rem;
+    justify-content: center;
+}
+.discount img{
+    transform: scale(0.6);
+}
+.discount strong{
+    position: absolute;
+    color: white;
+    z-index: 2;
+    font-size: 1.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.fruitsBanner{
+    width: 35%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+                                    /* main sectin start */
+.titleIntroduction{
+    display: flex;    
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+}
+.titleIntroduction strong{
+    color: #0A490A;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+.productItem{
+    width: 20%;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+.productInformation{
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    color: white;
+    line-height: 1rem;
+}
+.productInformation p{padding-bottom: 1rem;}
+.productInformation h4{
+    color: #FFC107;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.productInformation button ,.productBtn{
+    height: 1.7rem;
+    border: none;
+    color: #0A490A;
+    background-color: #FFC107;
+    border-radius: 0.5rem;
+    padding-inline: 1rem;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+.productInformation button img ,.productBtn img{
+    width: 1.5rem;
+}
+.productSection{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+.productCover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(67, 67, 67, 0.804);
+}
+.productItem:hover .productCover{
+    background-color: rgba(0, 0, 0, .1);
+}
+/* best seller section */
+
+.cardSection{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.cardItem{
+    padding: 1rem;
+    position: relative;
+    width: 25%;
+    border: 2px solid;
+    color: #0A490A;
+    border-radius: 1rem;
+    line-height: 1.5rem;
+}
+.cardBtn button{
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFC107;
+    color: #0A490A;
+    border: none;
+    border-radius: .5rem;
+}
+.cardBtn img{
+    width: 5%;
+    position: absolute;
+    right: 5rem;
+}
+.heart{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    transform: scale(2);
+}
+.sizeBox select{
+    border: 1px solid #0A490A;
+    width: 100%;
+    border-radius: .5rem;
+    color: #0A490A;
+}
+.quantityBox input{    
+    border: 1px solid #0A490A;
+    width: 100%;
+    border-radius: .5rem;
+    color: #0A490A;
+}
+
+/* categories section */
+.categoriesSection{
+    background-color: #0A490A;
+}
+.categoriesSection .cardItem {
+    color: white;
+}
+.categoriesSection select ,.categoriesSection input{
+    border-color: black;
+    background-color: inherit;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* class based style */
+.color_white{
+    color: white !important;
+}
+.p_h_center{
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+}
+.star{
+    color: #FFC107;
+}
+.font_0{
+    font-size: .7rem;
+}
+.font_1{
+    font-size: 1.5rem;
+}
+  .padding_1{
+    padding: .5rem;
+  }
+  .height_2{
+      height: 2rem;
+  }
+  .width_2{
+    width: 2rem;
+  }
+  .w_50{
+      width: 50%;
+  }
+  .w_80{
+    width: 80%;
+  }
+  .w_60{
+    width: 60%;
+  }
+  .w_40{
+    width: 40%;
+  }
+  .w_100{
+      width: 100%;
+  }
+  .h_100{
+      height: 100%;
+  }
+  .p_2{
+      padding: 2rem;
+  }
+  .pTop_1{
+    padding-top: 1rem;
+}
+  .p_absolute{
+    position: absolute;
+  }
+  .p_relative{
+    position: relative;
+  }
+  .p_sticky{
+    position: sticky;
+    top: 0;
+  }
+  .top_0{
+    top: 0;
+  }
+  .left_0{
+    left: 0;
+  }
+  .left_1{
+    left: 1rem;
+  }
+  .right_0{
+    right: 0;
+  }
+  .right_1{
+    right: 1rem;
+  }
+  .d_flex{
+    display: flex;
+  }
+  .justify_content_center{
+    justify-content: center;
+  }
+  .align_item_center{
+    align-items: center;
+  }
+  .gap_2{
+    gap: 2rem;
+  }
+  .gap_1{
+    gap: 1rem;
+  }
+  .direction_row{
+    flex-direction: row;
+  }
+  .direction_column{
+    flex-direction: column;
+  }
+  .textCenter{
+    text-align: center;
+  }
+
+
+  @media (max-width:700px) {
+
+  }
+  
