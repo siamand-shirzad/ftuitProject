@@ -209,6 +209,7 @@
     display: flex;
     justify-content: center;
     gap: 2rem;
+    padding-bottom: 1rem;
 }
 .cardItem{
     padding: 1rem;
@@ -267,8 +268,58 @@
     color: white;
 }
 
+/* best items section */
+.bestItemsSection{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.bestItemCard{
+    color: #0A490A;
+    width: 17%;
+    background-color: #E46002;
+    border-radius: 1rem;
+    position: relative;
+    padding: 3rem 1rem 1rem 1rem;
+    line-height: 1.5rem;
+}
+.bestItemCard img{
+    position: absolute;
+    width: 80%;
+    right: -4rem;
+    top: -2rem;
+}
+.bestItemCard button{
+    color: white;
+    background-color: #FFC107;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: .5rem;
+    padding: .3rem 1rem;
+    cursor: pointer;
+}
+/* main banner */
+.mainBannerBoxleft{
+    background: url(/assets/image/strawberry.png) center/ cover no-repeat, rgba(0, 0, 0, 0.623);
+}
+.mainBannerBoxRight{
+    background: url(/assets/image/orange.png) center/ cover no-repeat, rgba(0, 0, 0, 0.614);
+}
 
-
+.mainBannerBoxleft , .mainBannerBoxRight{
+    width: 50%;
+    background-blend-mode: overlay;
+    line-height: 1.5rem;
+    color: white;
+    padding: 5rem;
+}
+/* comment section */
+.comment{
+    width: 35%;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: .5rem;
+}
 
 
 
@@ -284,6 +335,15 @@
 /* class based style */
 .color_white{
     color: white !important;
+}
+.text_green{
+    color: #0A490A !important;
+}
+.line_height_1{
+    line-height: 1.5rem;
+}
+.padding_5{
+    padding: 5rem;
 }
 .p_h_center{
     position: absolute;
@@ -308,6 +368,12 @@
   .width_2{
     width: 2rem;
   }
+  .w_10{
+    width: 10%;
+  }
+  .w_30{
+    width: 30%;
+  }
   .w_50{
       width: 50%;
   }
@@ -331,6 +397,9 @@
   }
   .pTop_1{
     padding-top: 1rem;
+}    
+.mTop_2{
+    margin-top: 2rem;
 }
   .p_absolute{
     position: absolute;
@@ -348,6 +417,9 @@
   .left_0{
     left: 0;
   }
+  .left_m1{
+    left: -1rem;
+  }
   .left_1{
     left: 1rem;
   }
@@ -356,6 +428,9 @@
   }
   .right_1{
     right: 1rem;
+  }
+  .right_m1{
+    right: -1rem;
   }
   .d_flex{
     display: flex;
