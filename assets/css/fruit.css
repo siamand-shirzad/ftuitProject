@@ -6,6 +6,7 @@
     /* text-decoration: none; */
     transition: all 1s;
     list-style: none;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -331,7 +332,31 @@
 
 
 
-
+/* scroll to top buttom */
+.topScroll{
+    position: fixed;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 1rem;
+    bottom: 1rem;
+    color: #003500;
+    opacity: 30%;
+    transition: all 1s;
+    outline: 2px solid #003500;
+    outline-offset: 2px;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.topScroll:hover{
+    opacity: 100%;
+    box-shadow: 0 0 1rem #003500;
+    background-color: #003500;
+    color: white;
+}
 /* class based style */
 .color_white{
     color: white !important;
