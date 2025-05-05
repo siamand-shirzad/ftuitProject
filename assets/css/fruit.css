@@ -321,10 +321,45 @@
     border-radius: 5px;
     padding: .5rem;
 }
-
-
-
-
+/* blog & articles */
+.cardImg{
+    width: 100%;
+    height: 15rem;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+/* footer */
+.footerBackgroundBox{
+    width: 100%;
+    background-color: #0A490A;
+    height: 20rem;
+    position: absolute;
+    top: -20rem;
+    z-index: -1;
+}
+.emailBox{
+    border: 1px solid white;
+}
+.emailBox input{
+    height: 100%;
+    width: 100%;
+    padding-inline: 2rem;
+    background-color: inherit;
+    border: none
+}
+.emailBox a{
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+    /* font-size: 1.5rem; */
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    background-color: #FFC107;
+    height: 2rem;
+    padding-inline: .5rem;
+    border: 1px solid white;
+}
 
 
 
@@ -358,6 +393,12 @@
     color: white;
 }
 /* class based style */
+.bg_green{
+    background-color: #0A490A !important;
+}
+.bg_white{
+    background-color: white !important;
+}
 .color_white{
     color: white !important;
 }
